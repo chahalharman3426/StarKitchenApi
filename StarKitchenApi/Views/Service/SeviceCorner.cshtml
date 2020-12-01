@@ -1,0 +1,21 @@
+﻿@model IEnumerable<StarKitchenApi.Models.ServicesCredential>
+
+@{
+    ViewBag.Title = "SeviceCorner";
+}
+
+<h2>Sevice Corner</h2>
+<div class="container">
+    <div class="row">
+
+        @foreach (var item in Model)
+        {
+           <div class="col-md-4">
+               <h1 class="text-capitalize">@Html.DisplayFor(modelItem => item.Name)</h1>
+               <p>  @Html.DisplayFor(modelItem => item.Specification)</p>
+               <h3> @Html.DisplayFor(modelItem => item.Charges)</h3>
+           </div>
+                    
+          }    
+        </div>
+</div>

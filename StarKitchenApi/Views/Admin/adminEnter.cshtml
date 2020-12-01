@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "adminEnter";
+}
+
+
+<div class="container">
+    <div class="row">
+        <form method="post" action="AdminDetail">
+            <div class="col-md-6">
+                <label>Enter Name </label>
+                <input type="text" name="UserDetail" id="UserDetail" placeholder="Enter Name " class="form-control" required />
+
+            </div>
+            <div class="col-md-6">
+                <label>Enter Password </label>
+                <input type="password" name="PasswordDetail" id="PasswordDetail" placeholder="Enter Password " class="form-control" required />
+
+            </div>
+
+            <input type="submit" class="btn btn-warning" value="Sign In"/>
+        </form>
+    </div>
+
+</div>
